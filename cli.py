@@ -17,7 +17,7 @@ def parser() -> ArgumentParser:
     
 def main() -> None:
     args = parser().parse_args()
-    gmd_ctx = gmd.Gmd(args.output, args.template, args.input, ['pl', 'en'])
+    gmd_ctx = gmd.Gmd(args.output, args.template, args.input)
     gmd_ctx.run()
     print('Successfull deployment')
 
